@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align at the top */
+  height: 100vh; /* Ensure body takes full height */
+  margin: 0;
+  overflow: hidden; /* Prevent body from scrolling */
+}
+
+.container {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 800px; /* Fixed width */
+  min-height: 500px; /* Minimum height to ensure initial content is visible */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  border-radius: 8px;
+  box-sizing: border-box; /* Include padding and border in total width/height */
+}
+
+h2 {
+  text-align: center;
+  margin-top: 0; /* Remove top margin to prevent extra space */
+}
+
+.form-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto; /* Two equal columns and space for delete button */
+  gap: 5px; /* Space between columns */
+  align-items: center;
+  margin-bottom: 10px; /* Spacing between form groups */
+}
+
+.form-group .param-name input,
+.form-group .param-value input {
+  width: 100%; /* Inputs fill their grid cells */
+  padding: 6px 8px; /* Reduced padding inside inputs */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns grid */
+  gap: 5px; /* Space between buttons */
+  margin-top: 10px; /* Space above the buttons */
+}
+
+button {
+  padding: 6px 10px; /* Smaller padding */
+  font-size: 12px; /* Smaller font size */
+  background-color: #ccc; /* Default gray background */
+  color: #333;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  display: block;
+  width: 100%; /* Full width inside grid cell */
+}
+
+#replaceCurrentTab {
+  background-color: #007bff; /* Blue background for special button */
+  color: #fff; /* White text for special button */
+  margin-top: 15px; /* Add space above this button */
+}
+
+button:hover {
+  background-color: #bbb; /* Slightly darker gray on hover */
+}
+
+#replaceCurrentTab:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.delete-button {
+  display: flex;
+  justify-content: center; /* Center delete button horizontally */
+  align-items: center; /* Center delete button vertically */
+}
+
+/* #outputUrl {
+  margin-top: 15px;
+  word-break: break-word;
+} */
+
+#outputUrl {
+  margin-top: 15px; /* Tightened spacing */
+  word-break: break-word;
+  font-family: 'Courier New', Courier, monospace; /* Monospace font for better URL readability */
+  font-size: 16px; /* Increased font size */
+  background-color: #f9f9f9; /* Light background for contrast */
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  max-width: 100%; /* Ensure it doesn't overflow the container */
+  overflow-x: auto; /* Allow horizontal scrolling if necessary */
+}

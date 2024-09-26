@@ -1,6 +1,32 @@
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' https://cdn.jsdelivr.net/npm/sortablejs@1.14.0/Sortable.min.js"
+    /> -->
+    <title>DM URL Editor</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="libs/dragula.min.css" />
+    <script src="Sortable.min.js"></script>
+  </head>
   <body>
-    <h1>Hello Extensions</h1>
+    <div class="container">
+      <h2>DM URL Editor</h2>
+      <form id="sortableForm"></form>
+      <div class="button-grid">
+        <button id="addField" type="button">Add New Field</button>
+        <button id="generateUrl" type="button">Generate URL</button>
+        <button id="openInNewTab" type="button">Open in New Tab</button>
+        <button id="copyUrl" type="button">Copy URL</button>
+      </div>
+      <button id="replaceCurrentTab" type="button">Update</button> <!-- Ensure this button has type="button" -->
+      <p id="outputUrl"></p>
+    </div>
+    <!-- Include the Sortable.js library -->
+
     <script src="popup.js"></script>
   </body>
 </html>
