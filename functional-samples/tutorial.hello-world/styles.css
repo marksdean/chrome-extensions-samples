@@ -25,14 +25,6 @@ h2 {
   margin-top: 0; /* Remove top margin to prevent extra space */
 }
 
-.form-group {
-  display: grid;
-  grid-template-columns: 1fr 1fr auto; /* Two equal columns and space for delete button */
-  gap: 5px; /* Space between columns */
-  align-items: center;
-  margin-bottom: 10px; /* Spacing between form groups */
-}
-
 .form-group .param-name input,
 .form-group .param-value input {
   width: 100%; /* Inputs fill their grid cells */
@@ -101,11 +93,6 @@ button:hover {
   justify-content: center; /* Center delete button horizontally */
   align-items: center; /* Center delete button vertically */
 }
-
-/* #outputUrl {
-  margin-top: 15px;
-  word-break: break-word;
-} */
 
 #outputUrl {
   margin-top: 15px; /* Tightened spacing */
